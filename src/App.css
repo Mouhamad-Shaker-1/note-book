@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Lato&family=Nunito&family=Playfair+Display:ital@1&family=Prata&family=Raleway:ital,wght@1,100&family=Roboto&family=Roboto+Condensed&family=Teko&display=swap");
+
+#root {
+  width: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Raleway;
+  /* background-color: #b4daff; */
+}
+
+/* .btn{
+  font-weight: 200;
+  font-size: 1.3em;
+  color: #fff;
+  background-color: #0066CC;
+  padding: .5em 1.5em;
+  border: solid #0066cc 1px;
+  box-shadow: rgba(128, 128, 128, 0.388) .5em .5em .7em 1px;
+  border-radius: .8em;
+  transition : 1133ms;
+  transform: translateY(0);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  text-transform: lowercase;
+}
+
+.btn:hover{
+  transition : 1133ms;
+  transform : translateY(-0px);
+  background-color: #b4daff;
+  color: #0066cc;
+  border: solid 1px #0066cc;
+} */
+
+.app {
+  /* background-color: red; */
+  max-height: 100vh;
+  height: 100vh;
+  display: flex;
+}
+
+.write-note {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1.3em;
+  /* background-color: gray; */
+}
+
+.notes-info {
+  /* background-color: gray; */
+  padding: 1em;
+  max-width: 270px;
+  width: 35%;
+  max-height: 100%;
+  overflow: auto;
+}
+
+.create-note {
+  width: 100%;
+}
+
+.list-notes {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+.note {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0.5em;
+  background-color: gray;
+  padding: 0.5em;
+  margin-bottom: 1em;
+}
+
+.container-btn {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4em;
+}
+
+.title {
+  font-size: 1.1rem;
+}
+
+.note {
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.full {
+  height: 98%;
+}
+
+.write {
+  max-width: 80%;
+}
+
+.write-note button {
+  margin-right: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+@media (max-width: 750px) {
+  .notes-info {
+    max-width: none;
+    width: 600px;
+  }
+}
