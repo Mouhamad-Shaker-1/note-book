@@ -13,7 +13,7 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      notes: JSON.parse(localStorage.getItem('notes')) || [],
+      notes: JSON.parse(localStorage.getItem("notes")) || [],
       curronentNoteId: 0,
     };
     this.addNewNote = this.addNewNote.bind(this);
@@ -27,7 +27,7 @@ class App extends Component {
   }
 
   componentDidUpdate() {
-    localStorage.setItem('notes', JSON.stringify(this.state.notes))
+    localStorage.setItem("notes", JSON.stringify(this.state.notes));
   }
 
   componentDidMount() {

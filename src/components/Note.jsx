@@ -15,7 +15,7 @@ export default class Note extends Component {
           <div className="title">{this.props.note.title}</div>
           <p>
             {this.props.note.body.substring(0, 26) +
-              (this.props.note.body.length > 26 ? "..." : '')}
+              (this.props.note.body.length > 26 ? "..." : "")}
           </p>
         </div>
         <button
